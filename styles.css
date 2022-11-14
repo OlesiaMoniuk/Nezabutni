@@ -1,0 +1,121 @@
+
+body {
+    font-family: 'Caros', sans-serif;
+}
+.container {
+    display:grid;
+    grid-template-columns: 380px 380px 380px;
+    gap: 20px;
+    width:1180px;
+    padding: 0;
+    margin: auto;
+}
+.news {
+    width: 1180px;
+    margin: auto;
+    padding: 0;
+}
+.page-title {
+    color: #6E285F;
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 48px;
+    margin-bottom: 40px;;
+}
+.sort-icon {
+    width: 25.38px;
+    height: 19.25px;
+}
+.sort {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.sort-name {
+    margin: 0 20px 0 11.75px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+}
+.sort-variants {
+    list-style: none;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+}
+li:active {
+    color: #E1326E;
+    border-bottom: 1px solid #E1326E;
+}
+.variant {
+    margin: 0 20px 0 20px; 
+}
+.card {
+    width: 380px;
+    height:643px;
+    border: solid 2px #E7E7E7;
+    border-radius: 30px;
+}
+.card-general {
+    height: 343px;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: center;
+    justify-content: space-between;
+}
+.card-content {
+    width: 300px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+.date-line {
+    margin-top: 17.5px;
+    display: flex;
+    flex-direction: row;
+}
+.calendar {
+    width:21px;
+    height:19px;
+}
+.date {
+    margin: 0;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    margin-left: 9.5px;
+}
+.card-header {
+    font-size:18px;
+    line-height: 28px;
+    font-weight: 600;
+    margin: 12px 0 10px 0;
+}
+.card-text {
+    font-size:16px;
+    line-height: 24px;
+    font-weight: 400;
+    margin: 0;
+}
+.more {
+    width: 300px;
+    height: 52px;
+    border-style: none;
+    border-radius: 10px;
+    background: #E1326E; 
+    margin-bottom: 40px;
+}
+.button-text {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    color: #FFFFFF;
+    padding: 12px 97px;
+    margin: 0;
+}
