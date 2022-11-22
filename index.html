@@ -12,6 +12,15 @@
 
 <body>
     <main>
+        <div class="page-breadcrumbs">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Про нас</a></li>
+                    <li class="breadcrumb-item"><a href="#">Новини та медіа</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Новини</li>
+                </ol>
+            </nav>
+        </div>
         <div class="news">
             <div>
                 <h1 class="page-title">Новини</h1>
@@ -177,7 +186,43 @@
                     </button>
                 </div>
             </div>
+        </div>
+        <section class="pages">
+            <div id="carouselControls" class="carousel slide">
+                <a class="carousel-control control-prev" href="#carouselControls" role="button" data-slide="prev">
+                    <span class="carousel-control" aria-hidden="true">
+                        <img src="img/prev.svg">
+                    </span>
+                </a>
+                <div class="carousel-content">
+                    <div class="carousel-page visited">
+                        <a href="#" class="page-number">1</a>
+                    </div>
+                    <div class="carousel-page">
+                        <a href="#" class="page-number">2</a>
+                    </div>
+                    <div class="carousel-page active">
+                        <a href="#" class="page-number">3</a>
+                    </div>
+                    <div class="carousel-page">
+                        <a href="#" class="page-number">4</a>
+                    </div>
+                    <div class="carousel-page">
+                        <a href="#" class="page-number">5</a>
+                    </div>
+                    <div class="carousel-page">
+                        <a href="#" class="page-number">6</a>
+                    </div>
+                </div>
+                <a class="carousel-control control-next" href="#carouselControls" role="button" data-slide="next">
+                    <span class="carousel-control" aria-hidden="true">
+                        <img src="img/next.svg">
+                    </span>
+                </a>
+            </div>
+        </section>
     </main>
+    <script src="script.js"></script>
 </body>
 
 </html>

@@ -2,6 +2,25 @@
 body {
     font-family: 'Caros', sans-serif;
 }
+.page-breadcrumbs {
+    width: 1180px;
+    margin: auto;
+    padding: 0;
+}
+.breadcrumb {
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    /* color: #E1326E; */
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.breadcrumb li:not(:first-child)::before {
+    content: "/";
+}
 .container {
     display:grid;
     grid-template-columns: 380px 380px 380px;
@@ -57,9 +76,7 @@ li:active {
 }
 .card {
     width: 380px;
-    height:643px;
-    border: solid 2px #E7E7E7;
-    border-radius: 30px;
+    height: 643px;
 }
 .card-general {
     height: 343px;
@@ -68,6 +85,11 @@ li:active {
     align-content: flex-start;
     align-items: center;
     justify-content: space-between;
+    border: solid 2px #E7E7E7;
+    border-top: none;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    margin-top: -4px;
 }
 .card-content {
     width: 300px;
@@ -118,4 +140,63 @@ li:active {
     color: #FFFFFF;
     padding: 12px 97px;
     margin: 0;
+}
+.pages {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 82px;
+}
+.carousel {
+    width: 370px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.carousel-content {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #454545;
+}
+.carousel-page {
+    width: 36px;
+    height: 28px;
+    text-align: center;
+    margin-left: 10px;
+}
+a {
+    text-decoration: none !important;
+}
+.page-number {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #454545;
+    border-bottom: 1px solid #d1d1d1;
+}
+/* .page-number:visited {
+    color: #6E285F;
+    font-weight: 600;
+    border-bottom: none;
+} */
+.page-number:active {
+    color: #FFBE00;
+    border-bottom: none;
+}
+.carousel-control {
+    width: 32px;
+    height: 32px;
+    background: #E1326E;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.control-prev {
+    margin-right: 10px;
+}
+.control-next {
+    margin-left: 20px;
 }
